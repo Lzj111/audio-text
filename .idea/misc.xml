@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../../$SVN/02_产品文档/04_数据中心/01-参考资料/06_技术调研/Word_PPT内容替换/代码/operation-office/pom.xml" />
+        <option value="$PROJECT_DIR$/../audio-lib/SpeechRecognition-master/pom.xml" />
+        <option value="$PROJECT_DIR$/../audio-text-demo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

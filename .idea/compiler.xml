@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpeechRecognition" />
+        <module name="audio-text-demo" />
+        <module name="audio-text" />
+        <module name="operation-office" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="audio-text" target="1.8" />
+      <module name="audio-text-demo" target="1.7" />
+      <module name="operation-office" target="1.8" />
+      <module name="SpeechRecognition" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="audio-text" options="-parameters" />
+      <module name="operation-office" options="-parameters" />
+    </option>
+  </component>
+</project>

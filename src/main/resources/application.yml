@@ -1,0 +1,19 @@
+# 第三方平台信息
+platform-info:
+  # 百度智能云
+  baidu:
+    app-id: your app-id
+    api-key: your api-key
+    secret-key: your secret-key
+  # 腾讯云
+  tencent:
+    app-id: your app-id
+    secret-id: your secret-id
+    secret-key: your secret-key
+    # 服务地址（endpoint）API 支持就近地域接入
+    endpoint: asr.tencentcloudapi.com
+# vosk配置
+leenleda:
+  vosk:
+    # 模型地址,不能有中文路径，下载模型：https://alphacephei.com/vosk/models
+    model: E:\models\model-small-cn
