@@ -2,16 +2,30 @@
 platform-info:
   # 百度智能云
   baidu:
-    app-id: your app-id
-    api-key: your api-key
-    secret-key: your secret-key
+    app-id: *******
+    api-key: *******
+    secret-key: *******
   # 腾讯云
   tencent:
-    app-id: your app-id
-    secret-id: your secret-id
-    secret-key: your secret-key
+    app-id: *******
+    secret-id: *******
+    secret-key: *******
     # 服务地址（endpoint）API 支持就近地域接入
     endpoint: asr.tencentcloudapi.com
+  # 科大讯飞
+  xfyun:
+    app-id: *******
+    api-key: *******
+    api-secret: *******
+    # 上传文件的地址开头
+    ulr-prefix: https://upload-ost-api.xfyun.cn/file
+    # 创建、查询任务的地址开头
+    open-url-prefix: https://ost-api.xfyun.cn/v2
+  # 阿里云
+  aliyun:
+    app-key: *******
+    access-key-id: L*******
+    access-key-secret: *******
 # vosk配置
 leenleda:
   vosk:

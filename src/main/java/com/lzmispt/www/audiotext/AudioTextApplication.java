@@ -19,19 +19,25 @@ public class AudioTextApplication {
 
         // 1> 执行
         System.out.println("****************MP3转文字******************");
-        System.out.println("******* 请输入编码：0[百度]，1[腾讯]，2[Vosk开源] ");
+        System.out.println("******* 请输入编码：0[百度]，1[腾讯]，2[Vosk开源]，3[讯飞]，4[阿里] ");
         Scanner sca = new Scanner(System.in);
         int type = sca.nextInt();
         String beanName = "convertAudioBaiduImpl";
         switch (type) {
-            case 1:
+            case 1: // 腾讯
                 beanName = "convertAudioTencentImpl";
                 break;
-            case 0:
+            case 0: // 百度
                 beanName = "convertAudioBaiduImpl";
                 break;
-            case 2:
+            case 2: // VOSK
                 beanName = "convertAudioVoskImpl";
+                break;
+            case 3: // 讯飞
+                beanName = "convertAudioXunFeiImpl";
+                break;
+            case 4: // 阿里
+                beanName = "convertAudioAliImpl";
                 break;
         }
 
@@ -40,9 +46,14 @@ public class AudioTextApplication {
             return;
         }
         AudioMode audioMode = Tools.getAudioMode();
+        // 记录开始时间
+        long start = System.currentTimeMillis();
         String text = convertAudio.getTextForAudio(audioMode);
-        String printStr = "解析的文字内容是=>" + text;
-        Tools.soutInfo(printStr);
+        // 记录结束时间
+        long end = System.currentTimeMillis();
+        Tools.soutError("=======================================");
+        Tools.soutInfo("语音转写内容=>" + text);
+        Tools.reckonTime(start, end);
 
         // 执行完成后退出程序
         System.exit(0);

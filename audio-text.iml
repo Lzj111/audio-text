@@ -86,6 +86,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.2.8.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.12" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.8" level="project" />
     <orderEntry type="library" name="Maven: com.baidu.aip:java-sdk:4.16.14" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20160810" level="project" />
@@ -116,5 +117,50 @@
     <orderEntry type="library" name="Maven: org.ini4j:ini4j:0.5.4" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jna:jna:5.7.0" level="project" />
     <orderEntry type="library" name="Maven: com.alphacephei:vosk:0.3.31" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: commons-io:commons-io:2.11.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/resources/xfyunlib/commons-io-2.11.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: gson:gson:2.8.5">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/resources/xfyunlib/gson-2.8.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: okhttp:okhttp:3.11.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/resources/xfyunlib/okhttp-3.11.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: okio:okio:1.14.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/resources/xfyunlib/okio-1.14.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Maven: com.alibaba.nls:nls-sdk-recognizer:2.2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.nls:nls-sdk-common:2.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.51.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.51.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.51.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.51.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.51.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.51.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.51.Final" level="project" />
   </component>
 </module>

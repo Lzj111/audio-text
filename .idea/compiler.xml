@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpeechRecognition" />
         <module name="audio-text-demo" />
         <module name="audio-text" />
         <module name="operation-office" />

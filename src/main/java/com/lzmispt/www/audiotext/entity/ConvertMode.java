@@ -9,5 +9,7 @@ package com.lzmispt.www.audiotext.entity;
 public enum ConvertMode {
     BAIDU,
     TENCENT,
-    VOSK
+    VOSK,
+    XUNFEI,
+    ALI
 }

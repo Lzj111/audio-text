@@ -23,6 +23,10 @@ import javazoom.spi.mpeg.sampled.file.MpegAudioFileReader;
  * @Author by lzj
  */
 public class Tools {
+    private static final int MS_TO_DAYS = 86400000;
+    private static final int MS_TO_HOURS = 3600000;
+    private static final int MS_TO_MINUTES = 60000;
+    private static final int MS_TO_SECONDS = 1000;
 
     /**
      * 获取音频文件
@@ -46,7 +50,7 @@ public class Tools {
         AudioMode audioMode = new AudioMode();
         audioMode.setFilePath(filePath);
         audioMode.setExt(ext);
-        audioMode.setFileName(dialog.getName());
+        audioMode.setFileName(dialog.getFile());
         return audioMode;
     }
 
@@ -157,6 +161,39 @@ public class Tools {
      */
     public static void soutError(String msg) {
         System.out.println("\033[0;31m" + msg + "\u001B[0m");
+    }
+
+    /**
+     * 毫秒格式化
+     *
+     * @param mss 毫秒
+     * @return java.lang.String
+     * @author wlx
+     * @date 2021-07-12 14:08
+     */
+    public static String formatDuring(long mss) {
+        long days = mss / MS_TO_DAYS;
+        long hours = (mss % MS_TO_DAYS) / MS_TO_HOURS;
+        long minutes = (mss % MS_TO_HOURS) / MS_TO_MINUTES;
+        long seconds = (mss % MS_TO_MINUTES) / MS_TO_SECONDS;
+        return days + " 天 " + hours + " 小时 " + minutes + " 分钟 "
+                + seconds + " 秒 ";
+    }
+
+    /**
+     * 耗时计算
+     * @param start
+     * @param end
+     */
+    public static void reckonTime(long start, long end) {
+        long cost = end - start;
+        String costStr = cost + "毫秒";
+//        if (cost < MS_TO_SECONDS) {
+//            costStr = cost + "毫秒";
+//        } else {
+//            costStr = formatDuring(cost);
+//        }
+        soutInfo("语音转写耗时=>" + costStr);
     }
 }
 
